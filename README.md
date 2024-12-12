@@ -27,7 +27,7 @@ GO
 ### Elegir Sqlserver
 ![Image text](https://github.com/xOnlinEx/prueba-tecnica/blob/main/.asserts/2.png)
 ### ingresar los datos del contenedor
-```
+```js
 {
     'host': 'localhost',
     'port': '1433',
