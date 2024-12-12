@@ -17,7 +17,25 @@ CREATE DATABASE my_db;
 GO
 ```
 
-### Ingresos de datos del script [data.sql](https://github.com/xOnlinEx/prueba-tecnica/blob/main/prueba-tecnica/data.sql)
+### Ingresos de datos del script [data.sql](https://github.com/xOnlinEx/prueba-tecnica/blob/main/prueba-tecnica/data.sql) (puede ver el ejemplo de abajo)
 > Se recomienda usar una UI para esto, por ejemplo:
 - [tableplus](https://tableplus.com/)
 - [dbeaver](https://dbeaver.io/)
+
+### Abrir tableplus
+![Image text](https://github.com/xOnlinEx/prueba-tecnica/blob/main/.asserts/1.png)
+### Elegir Sqlserver
+![Image text](https://github.com/xOnlinEx/prueba-tecnica/blob/main/.asserts/2.png)
+### ingresar los datos del contenedor
+```json
+{
+    'host': 'localhost',
+    'port': '1433',
+    'user': 'sa',
+    'password': 'yourStrong(!)Password',
+    'database': my_db
+}
+```
+![Image text](https://github.com/xOnlinEx/prueba-tecnica/blob/main/.asserts/3.png)
+### Ingreso de datos [data.sql](https://github.com/xOnlinEx/prueba-tecnica/blob/main/prueba-tecnica/data.sql)
+![Image text](https://github.com/xOnlinEx/prueba-tecnica/blob/main/.asserts/4.png)
