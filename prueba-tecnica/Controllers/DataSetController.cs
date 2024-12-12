@@ -29,8 +29,8 @@ namespace prueba_tecnica.Controllers
 
             return Ok(dataSets);
         }
-        // POST api/dataset
         [HttpPost]
+        [Authorize]
         public async Task<IActionResult> CreateDataSet([FromBody] CreateDataSetDto createDataSetDto)
         {
             try
