@@ -1,2 +1,36 @@
+# Visual Studio temporary/generated files
+*.suo
+*.user
+*.tmp
+*.pdb
+*.cache
+*.suo
+*.user
+*.sln.docstates
+
+# Visual Studio 2015 solution and project files
+**/.vs/
+**/.idea/
+
+# User-specific files
 .vs/
-.idea/
+.suo
+*.user
+
+# Build output
+**/bin/
+**/obj/
+
+# Packages
+packages/
+
+# Local application data
+LocalAppData/
+Temp/
+*/.vs/
+
+# Logs
+*.log
+
+# IDE-specific files
+.vscode/
