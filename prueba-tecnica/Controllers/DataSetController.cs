@@ -24,7 +24,7 @@ namespace prueba_tecnica.Controllers
 
             if (dataSets == null || !dataSets.Any())
             {
-                return NotFound("No datasets found for the given user.");
+                return NotFound($"No se encontraron datasets para el usuario {userId}.");
             }
 
             return Ok(dataSets);
@@ -40,7 +40,7 @@ namespace prueba_tecnica.Controllers
             }
             catch (ArgumentException ex)
             {
-                return NotFound(ex.Message); // Si el ProcedureID o FieldID no se encuentran
+                return NotFound(ex.Message);
             }
         }
     }

@@ -21,7 +21,7 @@ namespace prueba_tecnica.Controllers
         }
 
         [HttpPost]
-        [Route("Registrarse")]
+        [Route("register")]
         public async Task<IActionResult> Registrarse(UserRegister objeto)
         {
 
@@ -42,7 +42,7 @@ namespace prueba_tecnica.Controllers
         }
 
         [HttpPost]
-        [Route("Login")]
+        [Route("login")]
         public async Task<IActionResult> Login(LoginDTO objeto)
         {
             var usuarioEncontrado = await _dbPruebaContext.Users
