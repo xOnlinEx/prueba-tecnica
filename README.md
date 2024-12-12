@@ -17,7 +17,7 @@ CREATE DATABASE my_db;
 GO
 ```
 
-### Ingresos de datos del script `data.sql`
+### Ingresos de datos del script [data.sql](https://github.com/xOnlinEx/prueba-tecnica/blob/main/prueba-tecnica/data.sql)
 > Se recomienda usar una UI para esto, por ejemplo:
-- tableplus
-- dbeaver
+- [tableplus](https://tableplus.com/)
+- [dbeaver](https://dbeaver.io/)
