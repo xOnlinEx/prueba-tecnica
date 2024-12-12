@@ -1,0 +1,66 @@
+[
+  {
+    "ContainingType": "prueba_tecnica.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "objeto",
+        "Type": "prueba_tecnica.Dtos.LoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "prueba_tecnica.Controllers.AuthController",
+    "Method": "Registrarse",
+    "RelativePath": "api/auth/registrarse",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "objeto",
+        "Type": "prueba_tecnica.Dtos.UserRegister",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "prueba_tecnica.Controllers.DataSetController",
+    "Method": "CreateDataSet",
+    "RelativePath": "api/dataset",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createDataSetDto",
+        "Type": "prueba_tecnica.Dtos.CreateDataSetDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "prueba_tecnica.Controllers.DataSetController",
+    "Method": "GetDataSetsByUserId",
+    "RelativePath": "api/dataset/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
