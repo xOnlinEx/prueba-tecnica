@@ -13,7 +13,7 @@ CREATE TABLE Users (
     Email NVARCHAR(255) NOT NULL
 );
 
--- Crear la tabla intermedia UserRoles para la relación muchos a muchos entre Users y Roles
+-- Crear la tabla intermedia UserRoles para la relaciÃ³n muchos a muchos entre Users y Roles
 CREATE TABLE UserRoles (
     ID INT PRIMARY KEY IDENTITY(1,1),
     UserID INT NOT NULL,
@@ -55,27 +55,27 @@ CREATE TABLE DataSets (
     FOREIGN KEY (FieldID) REFERENCES Fields(FieldID)
 );
 
--- Insertar Roles (sin especificar el RoleID, lo genera SQL Server automáticamente)
+-- Insertar Roles (sin especificar el RoleID, lo genera SQL Server automÃ¡ticamente)
 INSERT INTO Roles (RoleName, Description)
 VALUES
     ('Admin', 'Administrator role'),
     ('User', 'Regular user role');
     
--- Insertar Users (sin especificar el UserID, lo genera SQL Server automáticamente)
+-- Insertar Users (sin especificar el UserID, lo genera SQL Server automÃ¡ticamente)
 INSERT INTO Users (Username, Password, Email)
 VALUES
-    ('admin', 'admin123', 'admin@example.com'),
-    ('user1', 'user123', 'user1@example.com');
+    ('admin', '240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9', 'admin@example.com'),
+    ('user1', 'e606e38b0d8c19b24cf0ee3808183162ea7cd63ff7912dbb22b5e803286b4446', 'user1@example.com');
 
--- Insertar UserRoles (sin especificar el ID, lo genera SQL Server automáticamente)
--- Notar que estamos usando el UserID y RoleID que serán generados automáticamente
+-- Insertar UserRoles (sin especificar el ID, lo genera SQL Server automÃ¡ticamente)
+-- Notar que estamos usando el UserID y RoleID que serÃ¡n generados automÃ¡ticamente
 -- al insertar los datos en las tablas correspondientes
 INSERT INTO UserRoles (UserID, RoleID)
 VALUES
     (1, 1),
     (2, 2);
     
--- Insertar Procedures (sin especificar el ProcedureID, lo genera SQL Server automáticamente)
+-- Insertar Procedures (sin especificar el ProcedureID, lo genera SQL Server automÃ¡ticamente)
 -- Usamos UserID de los usuarios previamente insertados
 INSERT INTO Procedures (ProcedureName, Description, CreatedByUserID, LastModifiedUserID)
 VALUES
@@ -85,14 +85,14 @@ VALUES
     ('Machine Learning Model', 'Trains and applies ML models to data', 1, 2),
     ('Data Integration', 'Merges data from multiple sources', 2, 1);
     
--- Insertar Fields (sin especificar el FieldID, lo genera SQL Server automáticamente)
+-- Insertar Fields (sin especificar el FieldID, lo genera SQL Server automÃ¡ticamente)
 INSERT INTO Fields (FieldName, DataType)
 VALUES
     ('SampleField1', 'varchar'),
     ('SampleField2', 'int');
     
--- Insertar DataSets (sin especificar el DataSetID, lo genera SQL Server automáticamente)
--- Usamos ProcedureID y FieldID que serán generados automáticamente
+-- Insertar DataSets (sin especificar el DataSetID, lo genera SQL Server automÃ¡ticamente)
+-- Usamos ProcedureID y FieldID que serÃ¡n generados automÃ¡ticamente
 INSERT INTO DataSets (DataSetName, Description, ProcedureID, FieldID)
 VALUES
     ('Sales Data 2023', 'Annual sales figures', 1, 1),
